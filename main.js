@@ -88,8 +88,7 @@ var x = setInterval(function() {
 	} else{
 		document.body.style.backgroundImage = "url(background.jpg)";
 	}
-	document.body.style.color="black";
-	document.getElementById("unitLabel").style.color="white";
+	document.body.style.color="white";
 	
 		
 	if (window.screen.width > window.screen.height){
