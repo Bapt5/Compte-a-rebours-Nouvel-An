@@ -1,5 +1,5 @@
-var date=new Date('Januar 1, 2021 00:00:00');
-// var date=new Date('December 31, 2020 11:09:00');
+// var date=new Date('Januar 1, 2021 00:00:00');
+var date=new Date('December 31, 2020 12:02:00');
 var now;
 
 var x = setInterval(function() {
@@ -81,6 +81,7 @@ var x = setInterval(function() {
 		
 	if (distance <= 0) {
 		document.getElementById("clock").innerHTML = "🎉Bonne année🎉"
+		document.getElementById("music").play();
 	}
 
 	if (window.screen.width > window.screen.height){
