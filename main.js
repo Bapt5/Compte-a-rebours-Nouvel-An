@@ -25,7 +25,7 @@ var x = setInterval(function() {
 			document.getElementById("hour").disabled=false;
 			document.getElementById("minute").disabled=false;
 		}
-		document.getElementById("clock").innerHTML = weeks + " semaines<br>" + days + " jours<br>" + hours + " heures<br>" + minutes + " minutes<br>" + seconds + " secondes";
+		document.getElementById("clock").innerHTML = weeks + " semaine(s)<br>" + days + " jour(s)<br>" + hours + " heure(s)<br>" + minutes + " minute(s)<br>" + seconds + " seconde(s)";
 	}else if (unit=="day"){
 		var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
 		var days = Math.floor(distance /(1000 * 60 * 60 * 24));
@@ -41,7 +41,7 @@ var x = setInterval(function() {
 			document.getElementById("hour").disabled=false;
 			document.getElementById("minute").disabled=false;
 		}
-		document.getElementById("clock").innerHTML = days + " jours<br>" + hours + " heures<br>" + minutes + " minutes<br>" + seconds + " secondes";
+		document.getElementById("clock").innerHTML = days + " jour(s)<br>" + hours + " heure(s)<br>" + minutes + " minute(s)<br>" + seconds + " seconde(s)";
 	}else if (unit=="hour"){
 		var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
 		var days = Math.floor(distance /(1000 * 60 * 60 * 24));
@@ -57,7 +57,7 @@ var x = setInterval(function() {
 			document.getElementById("hour").disabled=false;
 			document.getElementById("minute").disabled=false;
 		}
-		document.getElementById("clock").innerHTML = hours + " heure<br>" + minutes + " minutes<br>" + seconds + " secondes";
+		document.getElementById("clock").innerHTML = hours + " heure(s)<br>" + minutes + " minute(s)<br>" + seconds + " seconde(s)";
 	}else if (unit=="minute"){
 		var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
 		var days = Math.floor(distance /(1000 * 60 * 60 * 24));
@@ -73,10 +73,10 @@ var x = setInterval(function() {
 		}else {
 			document.getElementById("minute").disabled=false;
 		}
-		document.getElementById("clock").innerHTML = minutes + " minutes<br>" + seconds + " secondes";
+		document.getElementById("clock").innerHTML = minutes + " minute(s)<br>" + seconds + " seconde(s)";
 	}else {
 		var seconds = Math.floor(distance / 1000);
-		document.getElementById("clock").innerHTML = seconds + " secondes ";
+		document.getElementById("clock").innerHTML = seconds + " seconde(s) ";
 	}
 
 	if (distance/1000 <=60){
