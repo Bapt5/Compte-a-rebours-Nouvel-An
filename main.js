@@ -1,5 +1,5 @@
 var date=new Date('Januar 1, 2021 00:00:00');
-// var date=new Date('December 31, 2020 12:15:00');
+// var date=new Date('December 31, 2020 18:12:00');
 var now;
 
 var x = setInterval(function() {
@@ -78,6 +78,18 @@ var x = setInterval(function() {
 		var seconds = Math.floor(distance / 1000);
 		document.getElementById("clock").innerHTML = seconds + " secondes ";
 	}
+
+	if (distance/1000 <=60){
+		document.getElementById("clock").style.fontSize="130px";
+	}else{
+		if (window.screen.width > window.screen.height){
+			document.getElementById("h1").style.fontSize="75px";
+			document.getElementById("clock").style.fontSize="75px";
+		} else{
+			document.getElementById("h1").style.fontSize="90px";
+			document.getElementById("clock").style.fontSize="90px";
+		}
+	}
 		
 	if (distance <= 0) {
 		document.getElementById("clock").innerHTML = "🎉Bonne année🎉"
@@ -90,14 +102,5 @@ var x = setInterval(function() {
 		document.body.style.backgroundImage = "url(backgroundTel.jpg)";
 	}
 	document.body.style.color="white";
-	
-		
-	if (window.screen.width > window.screen.height){
-		document.getElementById("h1").style.fontSize="75px";
-		document.getElementById("clock").style.fontSize="75px";
-	} else{
-		document.getElementById("h1").style.fontSize="90px";
-		document.getElementById("clock").style.fontSize="90px";
-	}
 		
 }, 50)
