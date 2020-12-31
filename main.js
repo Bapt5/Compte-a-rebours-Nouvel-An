@@ -1,5 +1,5 @@
-// var date=new Date('Januar 1, 2021 00:00:00');
-var date=new Date('December 31, 2020 12:02:00');
+var date=new Date('Januar 1, 2021 00:00:00');
+// var date=new Date('December 31, 2020 12:15:00');
 var now;
 
 var x = setInterval(function() {
