@@ -57,7 +57,7 @@ var x = setInterval(function() {
 			document.getElementById("hour").disabled=false;
 			document.getElementById("minute").disabled=false;
 		}
-		document.getElementById("clock").innerHTML = hours + " heures<br>" + minutes + " minutes<br>" + seconds + " secondes";
+		document.getElementById("clock").innerHTML = hours + " heure<br>" + minutes + " minutes<br>" + seconds + " secondes";
 	}else if (unit=="minute"){
 		var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
 		var days = Math.floor(distance /(1000 * 60 * 60 * 24));
