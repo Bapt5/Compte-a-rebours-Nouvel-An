@@ -86,7 +86,7 @@ var x = setInterval(function() {
 	if (window.screen.width > window.screen.height){
 		document.body.style.backgroundImage = "url(background.jpg)";
 	} else{
-		document.body.style.backgroundImage = "url(background.jpg)";
+		document.body.style.backgroundImage = "url(backgroundTel.jpg)";
 	}
 	document.body.style.color="white";
 	
