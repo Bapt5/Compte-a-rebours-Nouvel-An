@@ -26,6 +26,12 @@ h1{
   color: yellow;
 }
 
+.copyright{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
 .unit{
   opacity: 0;
 }
